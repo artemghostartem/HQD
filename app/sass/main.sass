@@ -167,9 +167,9 @@ section
             width: gem(27)
             height: gem(27)
 .opening
-    height: gem(900)
+    height: gem(872)
     margin-top: gem(28)
-    background: url(../img/opening.png) no-repeat
+    background: url(../img/opening.png) no-repeat cover
     &-main
         display: flex
         margin-left: gem(50)
@@ -184,16 +184,27 @@ section
     &-main
         display: flex
         flex-wrap: wrap
+        background: var(--color)
+        width: 100%
         &-element
             display: flex
             justify-content: center
             align-items: center
-            width: gem(800)
+            width: 50%
             height: gem(450)
             img
                 width: gem(355.5)
                 height: gem(360)
             &-card
-                display: none
+                display: flex
+                flex-direction: column
+        &-element:nth-child(1)
+            background: var(--color-blue-bgr)
+        &-element:nth-child(2)
+            background: var(--color-pink-bgr)
+        &-element:nth-child(3)
+            background: var(--color-green-bgr)
+        &-element:nth-child(4)
+            background: var(--color-yellow-bgr)
 
         
