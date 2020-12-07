@@ -38,7 +38,7 @@
 
 // label4
 @mixin label-4
-    @include mixed-lbl(var(--color-white), var(--sub-font), var(--font-size-label3), var(--font-weight-4), var(--letter-spacing), var(--line-height-label-3))
+    @include mixed-lbl(var(--color-white), var(--sub-font), var(--font-size-label4), var(--font-weight-4), var(--letter-spacing), var(--line-height-label-4))
 
 @mixin desc-1
 	@include mixed-lbl(var(--color-black2), var(--main-font), var(--font-size-desc1), var(--font-weight-4), var(--letter-spacing), var(--line-height-desc1))
@@ -91,6 +91,9 @@ article, footer, header, nav, section, input, textarea
 
     &.label-3
         @include label-3
+        
+    &.label-4
+        @include label-4
 
     &.desc-1
         @include desc-1

@@ -1,0 +1,53 @@
+.footer
+	background: var(--color-black-bgr)
+	padding: gem(90) gem(50) gem(30) gem(50)
+	&-contains-top
+		display: flex
+		flex-direction: row
+		align-items: flex-start
+		justify-content: space-between
+	&-left
+		width: gem(75)
+	&-middle
+		ul
+			display: flex
+			flex-direction: column
+			li
+				display: flex
+				margin-bottom: gem(14)
+	&-right
+		display: flex
+		flex-direction: column
+		p
+			display: flex
+			margin-bottom: gem(14)
+			a
+				opacity: 0.8
+				transition: all 0.3s ease
+				&:hover
+					opacity: 1
+					text-decoration: underline
+			span
+				opacity: 0.8
+			&.label-3
+				opacity: 1
+
+	&-contains-bottom
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: flex-start
+		margin-top: gem(70)
+		p
+			font-family: var(--sub-font)
+			font-size: gem(12)
+			line-height: gem(18)
+			opacity: 0.8
+			color: #fff
+		.social
+			display: flex
+			a
+				display: flex
+				width: gem(22)
+				margin-left: gem(22)
+
