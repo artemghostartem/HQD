@@ -14,15 +14,15 @@
 
 // title h1
 @mixin title-h1
-	@include mixed-lbl(var(--color-white), var(--sub-font), var(--font-size-h1), var(--font-weight-5), var(--letter-spacing), var(--line-height-h1))
+	@include mixed-lbl(var(--color-white), var(--sub-font), var(--font-size-h1), var(--font-weight-7), var(--letter-spacing), var(--line-height-h1))
 
 // title h2
 @mixin title-h2
-	@include mixed-lbl(var(--color-dark-blue), var(--sub-font), var(--font-size-h2), var(--font-weight-5), var(--letter-spacing), var(--line-height-h2))
+	@include mixed-lbl(var(--color-black1), var(--sub-font), var(--font-size-h2), var(--font-weight-7), var(--letter-spacing), var(--line-height-h2))
 
 // title h3
 @mixin title-h3
-	@include mixed-lbl(var(--color-white), var(--accent-font), var(--font-size-h3), var(--font-weight-7), var(--letter-spacing), var(--line-height-h3))
+	@include mixed-lbl(var(--color-white), var(--sub-font), var(--font-size-h3), var(--font-weight-7), var(--letter-spacing), var(--line-height-h3))
 
 // label1
 @mixin label-1
@@ -30,20 +30,22 @@
 
 // label2
 @mixin label-2
-	@include mixed-lbl(var(--color-white), var(--sub-font), var(--font-size-label2), var(--font-weight-5), var(--letter-spacing), var(--line-height-label-2))
+	@include mixed-lbl(var(--color-black1), var(--sub-font), var(--font-size-label2), var(--font-weight-7), var(--letter-spacing), var(--line-height-label-2))
 
 // label3
 @mixin label-3
-	@include mixed-lbl(var(--color-white), var(--accent-font), var(--font-size-label3), var(--font-weight-7), var(--letter-spacing), var(--line-height-label-3))
+	@include mixed-lbl(var(--color-white), var(--sub-font), var(--font-size-label3), var(--font-weight-4), var(--letter-spacing), var(--line-height-label-3))
+
+// label4
+@mixin label-4
+    @include mixed-lbl(var(--color-white), var(--sub-font), var(--font-size-label3), var(--font-weight-4), var(--letter-spacing), var(--line-height-label-3))
 
 @mixin desc-1
-	@include mixed-lbl(var(--color-link-water), var(--main-font), var(--font-size-desc1), var(--font-weight-3), var(--letter-spacing), var(--line-height-desc1))
+	@include mixed-lbl(var(--color-black2), var(--main-font), var(--font-size-desc1), var(--font-weight-4), var(--letter-spacing), var(--line-height-desc1))
 
 @mixin desc-2
-	@include mixed-lbl(var(--color-white), var(--main-font), var(--font-size-desc2), var(--font-weight-3), var(--letter-spacing), var(--line-height-desc2))
+	@include mixed-lbl(var(--color-white), var(--main-font), var(--font-size-desc2), var(--font-weight-4), var(--letter-spacing), var(--line-height-desc2))
 
-@mixin desc-3
-	@include mixed-lbl(var(--color-gray), var(--main-font), var(--font-size-desc3), var(--font-weight-3), var(--letter-spacing), var(--line-height-desc3))
 
 html, body, div, span,
 h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -68,56 +70,31 @@ article, footer, header, nav, section, input, textarea
         text-transform: lowercase
 
     &.title-h1
-        @include title-h1
-        &.black
-            color: var(--color-dark-grey)
+
     &.title-h2
         @include title-h2
         &.white
             color: var(--color-white)
-        &.black
-            color: var(--color-dark-grey)
 
     &.title-h3
-        @include title-h3
-        &.black
-            color: var(--color-dark-blue)
-        &.green
-            color: var(--color-light-darken)
+
     &.label-1
         @include label-1
-        &.green
-            color: var(--color-light-darken)
-        &.dark-blue
-            color: var(--color-dark-blue)
+        &.font-weight7
+            font-weight: 700
+        &.red
+            color: var(--color-red)
     &.label-2
         @include label-2
-        &.dark-blue
-            color: var(--color-dark-blue)
+        &.red
+            color: var(--color-red)
 
     &.label-3
         @include label-3
 
     &.desc-1
         @include desc-1
-        &.black
-            color: var(--color-dark-grey)
-            opacity: var(--opacity-08)
         &.white
             color: var(--color-white)
-        &.dark-blue
-            color: var(--color-dark-blue)
     &.desc-2
-        @include desc-2
-        &.black
-            color: var(--color-dark-blue)
-        &.white
-            color: var(--color-white)
-        &.raven
-            color: var(--color-light-raven)
-    &.desc-3
-        @include desc-3
-        &.white
-            color: var(--color-white)
-        &.black
-            color: var(--color-dark-blue)
+
