@@ -119,10 +119,78 @@ button[type='submit']
 
 
 //start here!
-
+img
+    width: 100%
+    height: auto
+    display: flex
+section
+    display: flex
+    width: 100%
+.button
+    display: flex
+    width: gem(248)
+    height: gem(74)
+    background: var(--color-red)
+    justify-content: center
+    align-items: center
+    box-shadow: 0 gem(4) gem(34) #035976
+    border-radius: gem(8)
+    span
+        display: flex
 .header
     display: flex
-    &-left, &-middle, &-left
+    width: 100%
+    background: var(--color-black-bgr)
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 10
+    &-main
         display: flex
+        background: var(--color-black-bgr)
+        width: 100%
+        height: gem(80)
+        align-items: center
+        justify-content: space-between
+        &-left, &-middle, &-left
+            display: flex
+        &-left
+            width: gem(73)
+            height: gem(35)
+        &-middle
+            a
+                display: flex
+                margin-right: gem(50)
+            a:last-child
+                margin-right: 0
+        &-right
+            width: gem(27)
+            height: gem(27)
+.opening
+    height: gem(900)
+    margin-top: gem(28)
+    background: url(../img/opening.png) no-repeat
+    &-main
+        display: flex
+        margin-left: gem(50)
+        margin-top: gem(280)
+        flex-direction: column
+    p
+        display: flex
+        max-width: gem(457)
+        margin-top: gem(11)
+        margin-bottom: gem(46)
+.products
+    &-main
+        display: flex
+        flex-wrap: wrap
+        &-element
+            display: flex
+            justify-content: center
+            align-items: center
+            width: gem(800)
+            height: gem(450)
+            &-card
+                display: none
 
         
