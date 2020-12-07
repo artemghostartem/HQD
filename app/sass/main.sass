@@ -175,6 +175,7 @@ section
     margin-top: gem(28)
     background: url(../img/opening.png) no-repeat
     background-size: cover
+    position: relative
     &-main
         display: flex
         margin-left: gem(50)
@@ -185,6 +186,14 @@ section
         max-width: gem(457)
         margin-top: gem(11)
         margin-bottom: gem(46)
+    &-img
+        display: flex
+        position: absolute
+        left: gem(139)
+        bottom: gem(22)
+        img
+            width: gem(22)
+            height: gem(50)
 .products
     &-main
         display: flex
@@ -277,53 +286,95 @@ section
                 max-width: gem(495)
             .button
                 margin-top: gem(32)
-.avantages
+.advantages
     &-main
         display: flex
         flex-wrap: wrap
         width: 100%
         &-element
             display: flex
-            justify-content: center
-            align-items: center
+            flex-direction: column
             width: 50%
             height: gem(450)
-            position: relative
             transition: ease all 0.3s
             padding-left: gem(200)
             padding-top: gem(85)
+            position: relative
+            h3
+                max-width: gem(407)
+            &-img
+                display: flex
+                width: gem(80)
+                height: gem(80)
+                justify-content: center
+                align-items: center
+                margin-bottom: gem(25)
+                border-radius: gem(22)
             img
-                transition: ease all 0.3s
+                width: gem(32)
+                height: auto
             &-card
                 display: flex
                 flex-direction: column
-                max-width: gem(245)
-                position: absolute
-                right: gem(150)
-                top: gem(80)
+                max-width: gem(407)
                 opacity: 0
                 transition: ease all 0.3s
-                p
-                    display: flex
-                    margin-top: gem(10)
-                    margin-bottom: gem(20)
+                margin-top: gem(10)
                 .button
                     background: var(--color-black-bgr)
                     box-shadow: 0 gem(4) gem(34) rgba(25, 25, 25, 0.2)
                     margin-top: gem(22)
-        &-element:hover
-            img
-                transform: translateX(gem(-151))
+            .circle-arrow
+                display: flex
+                justify-content: center
+                align-items: center
+                width: gem(46)
+                height: gem(46)
+                border-radius: gem(46)
+                position: absolute
+                right: gem(100)
+                bottom: gem(71)
                 transition: ease all 0.3s
-            .products-main-element-card
+                img
+                    width: gem(14)
+                    height: gem(14)
+
+
+        &-element:nth-child(1)
+            .circle-arrow
+                background: var(--color-arrow-bgr)
+            .advantages-main-element-img
+                background: var(--color-white-blue-bgr)
+        &-element:nth-child(2)
+            .circle-arrow
+                background: var(--color-white)
+            .advantages-main-element-img
+                background: var(--color-gray-bgr)
+        &-element:nth-child(3)
+            .circle-arrow
+                background: var(--color-white)
+            .advantages-main-element-img
+                background: var(--color-white-blue-little-bgr)
+        &-element:nth-child(4)
+            .circle-arrow
+                background: var(--color-arrow-bgr)
+            .advantages-main-element-img
+                background: var(--color-white-pink-little-bgr)
+        &-element:nth-child(even)
+            padding-left: gem(192)
+        &-element:hover
+            .advantages-main-element-card
                 opacity: 1
                 transition: ease all 0.3s
+            .circle-arrow
+                opacity: 0
+                transition: ease all 0.3s
         &-element:nth-child(1)
-            background: var(--color-blue-bgr)
+            background: var(--color-white)
         &-element:nth-child(2)
-            background: var(--color-pink-bgr)
+            background: var(--color-white-blue-bgr)
         &-element:nth-child(3)
-            background: var(--color-green-bgr)
+            background: var(--color-white-pink-bgr)
         &-element:nth-child(4)
-            background: var(--color-yellow-bgr)
+            background: var(--color-white)
         
