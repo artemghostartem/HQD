@@ -130,7 +130,7 @@ section
     width: 100%
 .button
     display: flex
-    width: gem(248)
+    width: gem(247)
     height: gem(74)
     background: var(--color-red)
     justify-content: center
@@ -171,7 +171,8 @@ section
 .opening
     height: gem(872)
     margin-top: gem(28)
-    background: url(../img/opening.png) no-repeat cover
+    background: url(../img/opening.png) no-repeat
+    background-size: cover
     &-main
         display: flex
         margin-left: gem(50)
@@ -186,7 +187,6 @@ section
     &-main
         display: flex
         flex-wrap: wrap
-        background: var(--color)
         width: 100%
         &-element
             display: flex
@@ -194,12 +194,36 @@ section
             align-items: center
             width: 50%
             height: gem(450)
+            position: relative
+            transition: ease all 0.3s
             img
                 width: gem(355.5)
                 height: gem(360)
+                transition: ease all 0.3s
             &-card
                 display: flex
                 flex-direction: column
+                max-width: gem(245)
+                position: absolute
+                right: gem(150)
+                top: gem(80)
+                opacity: 0
+                transition: ease all 0.3s
+                p
+                    display: flex
+                    margin-top: gem(10)
+                    margin-bottom: gem(20)
+                .button
+                    background: var(--color-black-bgr)
+                    box-shadow: 0 gem(4) gem(34) rgba(25, 25, 25, 0.2)
+                    margin-top: gem(22)
+        &-element:hover
+            img
+                transform: translateX(gem(-151))
+                transition: ease all 0.3s
+            .products-main-element-card
+                opacity: 1
+                transition: ease all 0.3s
         &-element:nth-child(1)
             background: var(--color-blue-bgr)
         &-element:nth-child(2)
@@ -208,5 +232,96 @@ section
             background: var(--color-green-bgr)
         &-element:nth-child(4)
             background: var(--color-yellow-bgr)
-
+.about
+    &-main
+        display: flex
+        width: 100%
+        &-text
+            display: flex
+            flex-direction: column
+            width: 50%
+            padding-left: gem(200)
+            padding-top: gem(272)
+            p
+                display: flex
+                margin-top: gem(18)
+            h2, p
+                max-width: gem(495)
+        &-pics
+            display: flex
+            width: 50%
+.about:nth-child(even)
+    .about-main
+        flex-direction: row-reverse
+        &-text
+            padding-left: gem(105)
+.proposal
+    &-main
+        display: flex
+        width: 100%
+        height: gem(900)
+        background: url(../img/proposal.png) no-repeat
+        background-size: cover
+        &-text
+            display: flex
+            flex-direction: column
+            width: 50%
+            padding-left: gem(200)
+            padding-top: gem(228)
+            p
+                display: flex
+                margin-top: gem(18)
+            h2, p
+                max-width: gem(495)
+            .button
+                margin-top: gem(32)
+.avantages
+    &-main
+        display: flex
+        flex-wrap: wrap
+        width: 100%
+        &-element
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 50%
+            height: gem(450)
+            position: relative
+            transition: ease all 0.3s
+            padding-left: gem(200)
+            padding-top: gem(85)
+            img
+                transition: ease all 0.3s
+            &-card
+                display: flex
+                flex-direction: column
+                max-width: gem(245)
+                position: absolute
+                right: gem(150)
+                top: gem(80)
+                opacity: 0
+                transition: ease all 0.3s
+                p
+                    display: flex
+                    margin-top: gem(10)
+                    margin-bottom: gem(20)
+                .button
+                    background: var(--color-black-bgr)
+                    box-shadow: 0 gem(4) gem(34) rgba(25, 25, 25, 0.2)
+                    margin-top: gem(22)
+        &-element:hover
+            img
+                transform: translateX(gem(-151))
+                transition: ease all 0.3s
+            .products-main-element-card
+                opacity: 1
+                transition: ease all 0.3s
+        &-element:nth-child(1)
+            background: var(--color-blue-bgr)
+        &-element:nth-child(2)
+            background: var(--color-pink-bgr)
+        &-element:nth-child(3)
+            background: var(--color-green-bgr)
+        &-element:nth-child(4)
+            background: var(--color-yellow-bgr)
         
