@@ -43,6 +43,7 @@
 			transform: translateX(gem(-15))
 			opacity: 0
 			pointer-events: none
+			position: absolute
 		&-left
 			display: flex
 			align-items: center
@@ -116,10 +117,12 @@
 		flex-direction: row
 		align-items: center
 		justify-content: space-between
-		transition: all 0.3s ease
+		// transition: all 0.3s ease
+		position: absolute
 		opacity: 0
 		pointer-events: none
 		&.active
+			position: unset
 			opacity: 1
 			pointer-events: unset
 		.total
@@ -129,8 +132,45 @@
 			color: #FFF
 		&.inactive
 			transform: translateX(gem(-15))
+			position: absolute
 			opacity: 0
 			pointer-events: none
+	&-next-step
+		position: absolute
+		top: gem(200)
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: flex-start
+		opacity: 0
+		pointer-events: none
+		transform: translateX(gem(15))
+		transition: all 0.3s ease
+		&.active
+			opacity: 1
+			pointer-events: unset
+			transform: translateX(gem(0))
+		input
+			width: gem(390)
+			height: gem(60)
+			font-size: gem(18)
+			line-height: gem(24)
+			padding: 0 gem(20)
+			border-radius: gem(5)
+			border: 1px solid #A4ABB3
+			outline: none
+			margin-top: gem(5)
+			margin-bottom: gem(15)
+			&:focus
+				border: 1px solid #16A6FC
+		button
+			margin-top: gem(35)
+			outline: none
+			color: #fff
+			border: none
+			outline: none
+			background: var(--color-black-bgr)
+
 
 
 .popup-on-buy

@@ -24,7 +24,7 @@ $(function() {
         for (let i = 0; i < removeButton.length; i++) {
             removeButton[i].addEventListener('click', function() {
                 $(this).parents('.form-product').remove()
-                getTotalPrice() 
+                // getTotalPrice() 
             })
         }
         fruct = true
@@ -52,7 +52,12 @@ $(function() {
 	        inputName.attr("value", fruct);
 	        inputName.attr("name", fruct);
 	        inputName.addClass(fruct)
+
+            let inputNumber = $(cloneProductCart).find('.numberInput')
+            inputNumber.attr("name", fruct);
+            
 	        productCart.after(cloneProductCart)
+
     }
     //popup after "buy" click
     function onBuyPopup() {
@@ -69,20 +74,20 @@ $(function() {
 
 
     //total prive
-    let totalprice = 0
-    function getTotalPrice() {
-        let prices = document.querySelectorAll('.form-product-right .price')
-        let totalPricePlace = $('.totalprice')
-        for( i = 0 ; i < prices.length; i++) {
+    // let totalprice = 0
+    // function getTotalPrice() {
+    //     let prices = document.querySelectorAll('.form-product-right .price')
+    //     let totalPricePlace = $('.totalprice')
+    //     for( i = 0 ; i < prices.length; i++) {
             
-            totalprice = +totalprice + +prices[i].textContent
+    //         totalprice = +totalprice + +prices[i].textContent
             
             
-        }
-        totalPricePlace.html(totalprice);
-        totalprice = 0
-        console.log(totalprice)
-    }
+    //     }
+    //     totalPricePlace.html(totalprice);
+    //     totalprice = 0
+    //     console.log(totalprice)
+    // }
 
 
     //pagescroll2id
@@ -107,6 +112,10 @@ $(function() {
     function screenChange() {
         $('.form-product').addClass('inactive')
         $('.form-down').addClass('inactive')
+        setTimeout(function(){
+            $('.form-next-step').addClass('active')
+        }, 300)
+        
     }
 
     $('.form-down .button').on('click', function(){
@@ -134,7 +143,7 @@ $(function() {
     $('.products-main-element:nth-child(1) .button').on('click', function() {
         if ($('.golubika').length <1 ) {
         	updateBuscet('HQD Cuvie - Blueberry', '500', 'img/Blueberry.png', 'golubika');
-            getTotalPrice()	
+            // getTotalPrice()	
         } 
         removingProducts();
         numbering();
@@ -143,7 +152,7 @@ $(function() {
     $('.products-main-element:nth-child(2) .button').on('click', function() {
         if ($('.klubnika').length <1 ) {
         	updateBuscet('HQD Cuvie - Strawberry', '500', 'img/strawberry.png', 'klubnika');
-            getTotalPrice()	
+            // getTotalPrice()	
         } 
         removingProducts();
         numbering();
@@ -152,7 +161,7 @@ $(function() {
     $('.products-main-element:nth-child(3) .button').on('click', function() {
         if ($('.myata').length <1 ) {
         	updateBuscet('HQD Cuvie - Mint', '500', 'img/mint.png', 'myata');	
-            getTotalPrice()
+            // getTotalPrice()
         } 
         removingProducts();
         numbering();
@@ -161,7 +170,7 @@ $(function() {
     $('.products-main-element:nth-child(4) .button').on('click', function() {
         if ($('.ananas').length <1 ) {
         	updateBuscet('HQD Cuvie - Pienapple', '500', 'img/pienapple.png', 'ananas');
-             getTotalPrice()	
+             // getTotalPrice()	
         } 
         removingProducts();
         numbering();
