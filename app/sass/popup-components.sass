@@ -194,3 +194,28 @@
 	.continue
 		text-decoration: underline
 		cursor: pointer
+@media only screen and (max-width : 1024px)
+	.buscet
+		width: 100%
+	.popup-on-buy
+		width: 100%
+
+@media only screen and (max-width : 480px)
+	.buscet
+		padding: gem(100) gem(20)
+	.form-next-step input
+		width: 100%
+	.form-next-step
+		top: gem(170)
+		width: gem(335)
+	.form-product
+		flex-direction: column
+		&-left
+			width: 100%
+		&-right
+			margin-left: 0
+			p
+				margin-top: gem(20)
+			.numbers
+				span
+					height: gem(30)

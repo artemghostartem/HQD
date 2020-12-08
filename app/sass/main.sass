@@ -130,6 +130,8 @@ img
 section
     display: flex
     width: 100%
+.mobile-menu
+    display: none
 .button
     display: flex
     width: gem(247)
@@ -143,7 +145,7 @@ section
     transition: all 0.3s ease
     &:hover
         box-shadow: 0 gem(4) gem(34) rgba(3, 89, 118, 1)
-        // transform: translateY(gem(-4))
+        // transform: translateY(0)
     span
         display: flex
 .header
@@ -191,7 +193,7 @@ section
                 height: gem(16)
                 transition: all 0.3s ease
                 &.active-menu
-                    margin-top: gem(10)
+                    margin-top: gem(20)
                     .burger-line
                         &:before
                             opacity: 0
@@ -199,9 +201,10 @@ section
                             top: 0
                             // width: gem(35)
                         &:after
-                            width: gem(35)
+                            // width: gem(35)
                             transform: rotate(90deg)
                             top: 0
+                            left: gem(0)
                         transform: rotate(45deg)
                 &-line
                     background: var(--color-white)
@@ -237,6 +240,7 @@ section
     height: gem(872)
     margin-top: gem(28)
     background: url(../img/opening.png) no-repeat
+    background-position: gem(0) gem(-150)
     background-size: cover
     position: relative
     &-main
@@ -289,7 +293,7 @@ section
                     margin-bottom: gem(20)
                 .button
                     background: var(--color-black-bgr)
-                    box-shadow: 0 gem(4) gem(34) rgba(25, 25, 25, 0.2)
+                    // box-shadow: 0 gem(4) gem(34) rgba(25, 25, 25, 0.2)
                     margin-top: gem(22)
         &-element:hover
             img
@@ -387,7 +391,7 @@ section
                 margin-top: gem(10)
                 .button
                     background: var(--color-black-bgr)
-                    box-shadow: 0 gem(4) gem(34) rgba(25, 25, 25, 0.2)
+                    // box-shadow: 0 gem(4) gem(34) rgba(25, 25, 25, 0.2)
                     margin-top: gem(22)
             .circle-arrow
                 display: flex
@@ -453,8 +457,31 @@ section
             &-middle
                 display: none
             &-right
+                display: flex
+                align-items: center
+                justify-content: flex-end
+                img
+                    margin-right: gem(40)
                 .burger
                     display: flex
+                    position: relative
+    .mobile-menu
+        display: flex
+        height: 100vh
+        z-index: 8
+        width: 100%
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        position: fixed
+        right: -100%
+        transition: all 0.3s ease
+        background: #fff
+        top: 0
+        &.active
+            right: 0
+        a
+            margin: gem(20) 0
     .opening
         background: url(../img/opening1024.png) no-repeat
         background-size: cover
@@ -491,17 +518,17 @@ section
                     top: gem(76)
             &-element:hover
                 img
-                    transform: unset
+                    // transform: unset
     .about-main
         flex-direction: column
         &-text
             width: 100%
             padding: 0
             padding-left: gem(70)
-            padding-top: gem(230)
+            padding-top: gem(50)
         &-pics
             width: 100%
-            margin-top: gem(35)
+            margin-top: gem(50)
     .about:nth-child(even)
         .about-main
             flex-direction: column
@@ -554,6 +581,10 @@ section
         img
             transform: unset
             margin-top: gem(45)
+        &:hover
+            img
+                transform: unset
+
         &-card
             position: relative
             right: unset

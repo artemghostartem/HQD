@@ -67,7 +67,7 @@ $(function() {
             popup.classList.add('active')
         setTimeout(function(){
             popup.classList.remove('active')
-        }, 8000)
+        }, 4000)
         }
         
     }
@@ -132,6 +132,13 @@ $(function() {
     })
 
 
+    //mobile-menu
+    $('.burger, .mobile-menu a').on('click',function () {
+        event.preventDefault()
+        $('.burger').toggleClass('active-menu')
+        $('.mobile-menu').toggleClass('active')
+
+    })
     $('.products-main-element .button').on('click',function() {
         onBuyPopup();
     })

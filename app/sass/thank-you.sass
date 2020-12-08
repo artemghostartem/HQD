@@ -19,3 +19,23 @@
 .button
 	&.black
 		background: var(--color-black-bgr)
+@media only screen and (max-width : 1024px)
+	.thank-you
+		align-items: flex-start
+		background-size: 100% 65%
+		height: gem(1100)
+		background-position-y: 100%
+	.thank-you-hero-section
+		width: 100%
+		padding-left: gem(20)
+		padding-top: gem(100)
+@media only screen and (max-width : 480px)
+	.thank-you
+		background-size: 100% 45%
+		height: gem(750)
+		background-position-y: 100%
+	.thank-you-hero-section
+		padding: gem(105) gem(20) gem(0) gem(20)
+		align-items: center
+		p
+			text-align: center
