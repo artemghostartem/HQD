@@ -15,6 +15,10 @@
 			li
 				display: flex
 				margin-bottom: gem(14)
+				a
+					transition: all 0.3s ease
+					&:hover
+						color: var(--color-red)
 	&-right
 		display: flex
 		flex-direction: column
@@ -22,11 +26,9 @@
 			display: flex
 			margin-bottom: gem(14)
 			a
-				opacity: 0.8
 				transition: all 0.3s ease
 				&:hover
-					opacity: 1
-					text-decoration: underline
+					color: var(--color-red)
 			span
 				opacity: 0.8
 			&.label-3

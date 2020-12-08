@@ -137,8 +137,13 @@ section
     background: var(--color-red)
     justify-content: center
     align-items: center
-    box-shadow: 0 gem(4) gem(34) #035976
+    box-shadow: 0 gem(4) gem(34) rgba(3, 89, 118, 0)
     border-radius: gem(8)
+    cursor: pointer
+    transition: all 0.3s ease
+    &:hover
+        box-shadow: 0 gem(4) gem(34) rgba(3, 89, 118, 1)
+        // transform: translateY(gem(-4))
     span
         display: flex
 .header
@@ -165,6 +170,9 @@ section
             a
                 display: flex
                 margin-right: gem(50)
+                transition: all 0.3s ease
+                &:hover
+                    color: var(--color-red)
             a:last-child
                 margin-right: 0
         &-right
@@ -173,6 +181,10 @@ section
             img
                 width: gem(27)
                 height: gem(27)
+                cursor: pointer
+                transition: all 0.3s ease
+                &.active
+                    transform: translateX(gem(15))
             .burger
                 display: none
                 width: gem(24)
@@ -312,6 +324,8 @@ section
         &-pics
             display: flex
             width: 50%
+            img
+                width: 100%
 .about:nth-child(even)
     .about-main
         flex-direction: row-reverse
