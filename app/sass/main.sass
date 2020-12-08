@@ -168,8 +168,59 @@ section
             a:last-child
                 margin-right: 0
         &-right
-            width: gem(27)
-            height: gem(27)
+            width: gem(88)
+            flex-direction: row
+            img
+                width: gem(27)
+                height: gem(27)
+            .burger
+                display: none
+                width: gem(24)
+                height: gem(16)
+                transition: all 0.3s ease
+                &.active-menu
+                    margin-top: gem(10)
+                    .burger-line
+                        &:before
+                            opacity: 0
+                            transform: rotate(90deg)
+                            top: 0
+                            // width: gem(35)
+                        &:after
+                            width: gem(35)
+                            transform: rotate(90deg)
+                            top: 0
+                        transform: rotate(45deg)
+                &-line
+                    background: var(--color-white)
+                    display: block
+                    width: gem(24)
+                    height: gem(1)
+                    background: var(--color-white)
+                    position: absolute
+                    right: gem(5)
+                    transition: all 0.3s ease
+                    &:before
+                        content: ''
+                        display: block
+                        width: gem(24)
+                        height: gem(1)
+                        background: var(--color-white)
+                        position: absolute
+                        top: gem(9)
+                        opacity: 1
+                        right: gem(0)
+                        transition: all 0.3s ease
+                    &:after
+                        content: ''
+                        display: block
+                        width: gem(24)
+                        height: gem(1)
+                        background: var(--color-white)
+                        position: absolute
+                        top: gem(18)
+                        right: gem(0)
+                        transition: all 0.3s ease
 .opening
     height: gem(872)
     margin-top: gem(28)
@@ -367,7 +418,7 @@ section
                 opacity: 1
                 transition: ease all 0.3s
             .circle-arrow
-                opacity: 0
+                transform: rotate(90deg)
                 transition: ease all 0.3s
         &-element:nth-child(1)
             background: var(--color-white)
@@ -377,4 +428,85 @@ section
             background: var(--color-white-pink-bgr)
         &-element:nth-child(4)
             background: var(--color-white)
-        
+@media only screen and (max-width : 1024px)
+    .header
+        .container
+            margin: unset
+            width: 100%
+        &-main
+            padding: 0 gem(32)
+            width: 100%
+            &-middle
+                display: none
+            &-right
+                .burger
+                    display: flex
+    .opening
+        background: url(../img/opening1024.png) no-repeat
+        background-size: cover
+        margin-top: gem(73)
+        height: gem(950)
+        &-img
+            display: none
+        &-main
+            margin-left: 0
+            align-items: center
+            position: relative
+            margin-top: gem(153)
+            h1, p
+                text-align: center
+            h1
+                max-width: gem(560)
+            p
+                max-width: gem(457)
+            .button
+                margin: 0
+                position: absolute
+                bottom: gem(-415)
+    .products
+        &-main
+            &-element
+                width: 100%
+                img
+                    transform: translateX(gem(-133))
+                    transition: ease all 0.3s
+                &-card
+                    opacity: 1
+                    transition: ease all 0.3s
+                    right: gem(118)
+                    top: gem(76)
+    .about-main
+        flex-direction: column
+        &-text
+            width: 100%
+            padding: 0
+            padding-left: gem(70)
+            padding-top: gem(230)
+        &-pics
+            width: 100%
+            margin-top: gem(35)
+    .about:nth-child(even)
+        .about-main
+            flex-direction: column
+            &-text
+                padding-left: gem(70)
+    .proposal-main
+        justify-content: center
+        background: url(../img/proposal1024.png) no-repeat
+        background-size: cover
+        height: gem(1024)
+        position: relative
+        &-text
+            width: 100%
+            padding-top: gem(160)
+            padding-left: 0
+            align-items: center
+            max-width: gem(429)
+            h2, p
+                text-align: center
+            .button
+                margin: 0
+                position: absolute
+                bottom: gem(155)
+    .advantages-main-element
+        width: 100%
