@@ -475,6 +475,9 @@ section
                     transition: ease all 0.3s
                     right: gem(118)
                     top: gem(76)
+            &-element:hover
+                img
+                    transform: unset
     .about-main
         flex-direction: column
         &-text
@@ -510,3 +513,74 @@ section
                 bottom: gem(155)
     .advantages-main-element
         width: 100%
+    .advantages-main-element-card
+        opacity: 1
+@media only screen and (max-width : 480px)
+    .opening
+        background: url(../img/opening480.png) no-repeat
+        background-size: cover
+        height: gem(732)
+        &-main
+            margin-top: gem(65)
+            h1, p
+                max-width: gem(325)
+            br
+                display: none
+            .button
+                bottom: gem(-300)
+    .proposal-main
+        background: url(../img/proposal480.png) no-repeat
+        background-size: cover
+        background-position: center center
+    .products-main-element
+        height: gem(812)
+        justify-content: flex-start
+        align-items: center
+        flex-direction: column
+        img
+            transform: unset
+            margin-top: gem(45)
+        &-card
+            position: relative
+            right: unset
+            top: gem(45)
+    .about-main
+        &-text
+            padding-left: gem(32)
+            padding-right: gem(32)
+            padding-top: gem(63)
+    .about:nth-child(even)
+        .about-main
+            &-text
+                padding-left: gem(32)
+                padding-right: gem(32)
+                padding-top: gem(63)
+    .advantages-main-element, .advantages-main-element:nth-child(even)
+        padding-left: gem(32)
+        padding-right: gem(32)
+    .advantages-main-element .circle-arrow
+        display: none
+    .footer-contains-top
+        flex-direction: column
+        align-items: center
+    .footer-middle
+        margin-top: gem(25)
+        ul li
+            display: flex
+            justify-content: center
+    .footer-right
+        p.label-3
+            display: none
+        p:nth-child(2)
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-bottom: gem(24)
+    .footer
+        padding-top: gem(64)
+    .footer-contains-bottom
+        flex-direction: column-reverse
+        align-items: center
+        margin-top: gem(46)
+        .social
+            margin-bottom: gem(18)
