@@ -42,7 +42,7 @@ a
 
 img
     max-width: 100%
-    height: auto
+    height: 100%
 
 section
     position: relative
@@ -125,7 +125,7 @@ button[type='submit']
 //start here!
 img
     width: 100%
-    height: auto
+    // height: auto
     display: flex
 section
     display: flex
@@ -303,13 +303,26 @@ section
                 opacity: 1
                 transition: ease all 0.3s
         &-element:nth-child(1)
-            background: var(--color-blue-bgr)
+            background: #C28C4C
         &-element:nth-child(2)
             background: var(--color-pink-bgr)
         &-element:nth-child(3)
-            background: var(--color-green-bgr)
+            background: #AA725C
         &-element:nth-child(4)
-            background: var(--color-yellow-bgr)
+            background: #4062A4
+        &-element:nth-child(5)
+            background: #C9636E
+        &-element:nth-child(6)
+            background: #D48F8B
+        &-element:nth-child(7)
+            background: #BF83A1
+        &-element:nth-child(8)
+            background: #5EB087
+        &-element:nth-child(9)
+            background: #C9636E
+        &-element:nth-child(10)
+            background: #B46EB3
+            
 .about
     &-main
         display: flex
@@ -328,6 +341,7 @@ section
         &-pics
             display: flex
             width: 50%
+            height: gem(800)
             img
                 width: 100%
 .about:nth-child(even)
@@ -351,6 +365,8 @@ section
             p
                 display: flex
                 margin-top: gem(18)
+                &.desc-1.black
+                    color: #04004D
             h2, p
                 max-width: gem(495)
             .button
@@ -529,6 +545,7 @@ section
         &-pics
             width: 100%
             margin-top: gem(50)
+            height: gem(735)
     .about:nth-child(even)
         .about-main
             flex-direction: column
@@ -594,6 +611,8 @@ section
             padding-left: gem(32)
             padding-right: gem(32)
             padding-top: gem(63)
+        &-pics
+            height: gem(358)
     .about:nth-child(even)
         .about-main
             &-text
