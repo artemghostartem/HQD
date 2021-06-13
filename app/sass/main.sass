@@ -276,8 +276,9 @@ section
             transition: ease all 0.3s
             img
                 width: gem(355.5)
-                height: gem(360)
+                height: gem(430)
                 transition: ease all 0.3s
+                // mix-blend-mode: lighten
             &-card
                 display: flex
                 flex-direction: column
@@ -303,36 +304,41 @@ section
                 opacity: 1
                 transition: ease all 0.3s
         &-element:nth-child(1)
-            background: #C28C4C
+            background: #5C94CA
         &-element:nth-child(2)
-            background: var(--color-pink-bgr)
+            background: #8876B7
         &-element:nth-child(3)
-            background: #AA725C
+            background: #50AE60
         &-element:nth-child(4)
-            background: #4062A4
+            background:  #EA7083
         &-element:nth-child(5)
-            background: #C9636E
+            background: #FC9540
         &-element:nth-child(6)
-            background: #D48F8B
+            background: #586BB2
         &-element:nth-child(7)
-            background: #BF83A1
+            background: #956488
         &-element:nth-child(8)
-            background: #5EB087
+            background: #2F834E
         &-element:nth-child(9)
-            background: #C9636E
+            background: #F35349
         &-element:nth-child(10)
-            background: #B46EB3
+            background: #FFC43A
+        &-element:nth-child(11)
+            background: #A94741
+
+            
             
 .about
     &-main
         display: flex
         width: 100%
+        height: gem(800)
+        padding: 0 gem(200)
         &-text
             display: flex
             flex-direction: column
             width: 50%
-            padding-left: gem(200)
-            padding-top: gem(272)
+            justify-content: center
             p
                 display: flex
                 margin-top: gem(18)
@@ -341,9 +347,10 @@ section
         &-pics
             display: flex
             width: 50%
-            height: gem(800)
+            align-items: center
             img
                 width: 100%
+                height: auto
 .about:nth-child(even)
     .about-main
         flex-direction: row-reverse
@@ -537,11 +544,12 @@ section
                     // transform: unset
     .about-main
         flex-direction: column
+        padding: 0 gem(70)
         &-text
             width: 100%
             padding: 0
-            padding-left: gem(70)
             padding-top: gem(50)
+            padding-left: gem(70)
         &-pics
             width: 100%
             margin-top: gem(50)
@@ -549,8 +557,8 @@ section
     .about:nth-child(even)
         .about-main
             flex-direction: column
-            &-text
-                padding-left: gem(70)
+            &-pics
+                margin-bottom: gem(50)
     .proposal-main
         justify-content: center
         background: url(../img/proposal1024.png) no-repeat
@@ -607,12 +615,15 @@ section
             right: unset
             top: gem(45)
     .about-main
+        padding: 0
         &-text
             padding-left: gem(32)
             padding-right: gem(32)
             padding-top: gem(63)
         &-pics
             height: gem(358)
+            // padding-left: gem(32)
+            // padding-right: gem(32)
     .about:nth-child(even)
         .about-main
             &-text

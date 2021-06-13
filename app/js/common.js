@@ -129,91 +129,100 @@ $(function() {
     })
 
     $('.products-main-element:nth-child(1) .button').on('click', function() {
-        if ($('.mango').length <1 ) {
-        	updateBuscet('HQD Cuvie - Iced mango', '199', 'img/mango.png', 'mango');
+        if ($('.blue-razz-lemonade').length <1 ) {
+        	updateBuscet('KATANA PUFF BLUE RAZZ LEMONADE', '199', 'img/stick/blue-lemonade.png', 'blue-razz-lemonade');
         } 
         removingProducts();
-        numbering('.mango');
+        numbering('.blue-razz-lemonade');
         
     })
     $('.products-main-element:nth-child(2) .button').on('click', function() {
-        if ($('.strawberry').length <1 ) {
-        	updateBuscet('HQD Cuvie - Strawberry', '199', 'img/strawberry.png', 'strawberry');
+        if ($('.Grape').length <1 ) {
+        	updateBuscet('KATANA PUFF Grape', '199', 'img/stick/grape.png', 'Grape');
         } 
         removingProducts();
-        numbering('.strawberry');
+        numbering('.Grape');
         
     })
     $('.products-main-element:nth-child(3) .button').on('click', function() {
-        if ($('.tobacco').length <1 ) {
-        	updateBuscet('HQD Cuvie - Nut tobacco', '199', 'img/nuts.png', 'tobacco');	
+        if ($('.kiwi').length <1 ) {
+        	updateBuscet('KATANA PUFF KIWI PASSION', '199', 'img/stick/kiwi.png', 'kiwi');	
             // getTotalPrice()
         } 
         removingProducts();
-        numbering('.tobacco');
+        numbering('.kiwi');
         
     })
     $('.products-main-element:nth-child(4) .button').on('click', function() {
-        if ($('.Blueberry').length <1 ) {
-        	updateBuscet('HQD Cuvie - Blueberry', '199', 'img/blueberry.png', 'Blueberry');
+        if ($('.pink-lemonare').length <1 ) {
+        	updateBuscet('KATANA PUFF PINK LEMONADE', '199', 'img/stick/pink-lemonade.png', 'pink-lemonare');
         
         } 
         removingProducts();
-        numbering('.Blueberry');
+        numbering('.pink-lemonare');
        
     })
     $('.products-main-element:nth-child(5) .button').on('click', function() {
+        if ($('.mango').length <1 ) {
+            updateBuscet('KATANA PUFF Mango', '199', 'img/stick/mango.png', 'mango');
+        
+        } 
+        removingProducts();
+        numbering('.mango');
+       
+    })
+    $('.products-main-element:nth-child(6) .button').on('click', function() {
+        if ($('.blueberry').length <1 ) {
+            updateBuscet('KATANA PUFF Blueberry', '199', 'img/stick/blueberry.png', 'blueberry');
+        
+        } 
+        removingProducts();
+        numbering('.blueberry');
+       
+    })
+    $('.products-main-element:nth-child(7) .button').on('click', function() {
+        if ($('.red-bull').length <1 ) {
+            updateBuscet('KATANA PUFF RED BULL', '199', 'img/stick/red-bull.png', 'red-bull');
+        
+        } 
+        removingProducts();
+        numbering('.red-bull');
+       
+    })
+     $('.products-main-element:nth-child(8) .button').on('click', function() {
+        if ($('.watermelon').length <1 ) {
+            updateBuscet('KATANA PUFF WATERMELON', '199', 'img/stick/watermelon.png', 'watermelon');
+        
+        } 
+        removingProducts();
+        numbering('.watermelon');
+       
+    })
+      $('.products-main-element:nth-child(9) .button').on('click', function() {
+        if ($('.strawberry-banana').length <1 ) {
+            updateBuscet('KATANA PUFF STRAWBERRY BANANA', '199', 'img/stick/strawberry-banana.png', 'strawberry-banana');
+        
+        } 
+        removingProducts();
+        numbering('.strawberry-banana');
+       
+    })
+       $('.products-main-element:nth-child(10) .button').on('click', function() {
+        if ($('.banana').length <1 ) {
+            updateBuscet('KATANA PUFF BANANA ICE', '199', 'img/stick/banana.png', 'banana');
+        
+        } 
+        removingProducts();
+        numbering('.banana');
+       
+    })
+    $('.products-main-element:nth-child(11) .button').on('click', function() {
         if ($('.cola').length <1 ) {
-            updateBuscet('HQD Cuvie - Cola iced', '199', 'img/cola.png', 'cola');
+            updateBuscet('KATANA PUFF Cola', '199', 'img/stick/cola.png', 'cola');
         
         } 
         removingProducts();
         numbering('.cola');
-       
-    })
-    $('.products-main-element:nth-child(6) .button').on('click', function() {
-        if ($('.peach').length <1 ) {
-            updateBuscet('HQD Cuvie - Peach iced', '199', 'img/ice_peach.png', 'peach');
-        
-        } 
-        removingProducts();
-        numbering('.peach');
-       
-    })
-    $('.products-main-element:nth-child(7) .button').on('click', function() {
-        if ($('.gum').length <1 ) {
-            updateBuscet('HQD Cuvie - Bubble gum', '199', 'img/bubble.png', 'gum');
-        
-        } 
-        removingProducts();
-        numbering('.gum');
-       
-    })
-     $('.products-main-element:nth-child(8) .button').on('click', function() {
-        if ($('.mint').length <1 ) {
-            updateBuscet('HQD Cuvie - Ice mint', '199', 'img/mint.png', 'mint');
-        
-        } 
-        removingProducts();
-        numbering('.mint');
-       
-    })
-      $('.products-main-element:nth-child(9) .button').on('click', function() {
-        if ($('.mixed').length <1 ) {
-            updateBuscet('HQD Cuvie - Mixed fruit', '199', 'img/mixed.png', 'mixed');
-        
-        } 
-        removingProducts();
-        numbering('.mixed');
-       
-    })
-       $('.products-main-element:nth-child(10) .button').on('click', function() {
-        if ($('.grapey').length <1 ) {
-            updateBuscet('HQD Cuvie - Grapey', '199', 'img/grape.png', 'grapey');
-        
-        } 
-        removingProducts();
-        numbering('.grapey');
        
     })
 
