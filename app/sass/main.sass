@@ -282,7 +282,8 @@ section
             &-card
                 display: flex
                 flex-direction: column
-                max-width: gem(245)
+                align-items: center
+                max-width: gem(265)
                 position: absolute
                 right: gem(150)
                 top: gem(80)
@@ -291,6 +292,7 @@ section
                 p
                     display: flex
                     margin-top: gem(10)
+                    text-align: center
                     margin-bottom: gem(20)
                 .button
                     background: var(--color-black-bgr)
@@ -567,7 +569,7 @@ section
         position: relative
         &-text
             width: 100%
-            padding-top: gem(160)
+            padding-top: gem(60)
             padding-left: 0
             align-items: center
             max-width: gem(429)
@@ -586,23 +588,25 @@ section
         background: url(../img/opening480.png) no-repeat
         background-size: cover
         height: gem(732)
+        margin-top: gem(80)
         &-main
-            margin-top: gem(65)
+            margin-top: gem(35)
             h1, p
                 max-width: gem(325)
             br
                 display: none
             .button
-                bottom: gem(-300)
+                bottom: gem(-370)
     .proposal-main
         background: url(../img/proposal480.png) no-repeat
         background-size: cover
         background-position: center center
     .products-main-element
-        height: gem(812)
+        height: auto
         justify-content: flex-start
         align-items: center
         flex-direction: column
+        padding-bottom: gem(100)
         img
             transform: unset
             margin-top: gem(45)
@@ -616,12 +620,16 @@ section
             top: gem(45)
     .about-main
         padding: 0
+        height: auto
         &-text
             padding-left: gem(32)
             padding-right: gem(32)
             padding-top: gem(63)
         &-pics
-            height: gem(358)
+            height: auto
+            img
+                height: gem(450)
+                object-fit: cover
             // padding-left: gem(32)
             // padding-right: gem(32)
     .about:nth-child(even)
